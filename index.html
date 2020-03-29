@@ -4,6 +4,7 @@
 		<meta charset="utf-8" />
 		<title>葡萄城笔试题</title>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/input_plug-in.css"/>
 		<script type="text/javascript" src="js/input_plug-in.js" ></script>
 	</head>
 	<body>
@@ -13,7 +14,9 @@
 				new initPlugIn({
 					el: document.getElementById('js-demo'),
 					placeholder: '请输入信息',
-					change: function (val) {}
+					change: function (val) {
+						console.log('用户输入信息', val)
+					}
 				})
 			}
 		</script>

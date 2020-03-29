@@ -1,0 +1,13 @@
+.plugin-box {
+	display: inline-block;
+	min-width: 60%;
+	min-height: 40px;
+	border: 1px solid #60b5ff;
+	color: #000;
+	font-size: 12px;
+	line-height: 16px;
+}
+.plugin-box:empty::before {
+	color: lightgrey;
+	content: attr(placeholder);
+}
