@@ -2,9 +2,20 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title></title>
+		<title>葡萄城笔试题</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="js/input_plug-in.js" ></script>
 	</head>
 	<body>
-		
+		<div id="js-demo" class="fd-demo"></div>
+		<script>
+			window.onload = function() {
+				new initPlugIn({
+					el: document.getElementById('js-demo'),
+					placeholder: '请输入信息',
+					change: function (val) {}
+				})
+			}
+		</script>
 	</body>
 </html>
